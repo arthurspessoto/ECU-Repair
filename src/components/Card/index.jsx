@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import {
   Button,
@@ -11,7 +11,7 @@ import {
 } from "./styles";
 
 import Icon from "../../assets/alipay-circle.svg";
-import { useAuth } from "../../context/auth";
+import { useAuth } from "../../context/authenticateRoute";
 export default function Card({ children }) {
   const { verifyNextRouteOnSetRouter} = useAuth();
 

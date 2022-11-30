@@ -11,8 +11,6 @@ import {
 import LogoEmail from "../../../../assets/union.svg";
 import LogoPassword from "../../../../assets/password.svg";
 
-/* @TODO: configurar absolute imports */
-
 export default function Login() {
   return (
     <Main>
