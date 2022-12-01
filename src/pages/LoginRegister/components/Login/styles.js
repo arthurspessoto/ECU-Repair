@@ -67,3 +67,20 @@ export const LostPassword = styled.button`
   background-color: transparent;
   cursor: pointer;
 `;
+
+export const Button = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  height: 2.5rem;
+  width: 7rem;
+  background: #1890ff;
+  border: 1px solid #1890ff;
+  /* margin-top: 1rem; */
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  border-radius: 2px;
+  color: #fff;
+  font-size: 1rem;
+`;

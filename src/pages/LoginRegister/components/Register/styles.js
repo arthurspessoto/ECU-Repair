@@ -1,13 +1,9 @@
 import styled from "styled-components";
 
-export const Main = styled.main`
+export const Container = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: #1e1e1e;
-  min-height: 100vh;
-  @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-  font-family: "Roboto", sans-serif;
 `;
 
 export const WriteText = styled.input`
@@ -24,5 +20,21 @@ export const WriteText = styled.input`
   text-align: center;
   font-weight: 400;
   /* opacity: 0.7; */
+`;
 
+export const Button = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  height: 2.5rem;
+  width: 7rem;
+  background: #1890ff;
+  border: 1px solid #1890ff;
+  /* margin-top: 1rem; */
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  border-radius: 2px;
+  color: #fff;
+  font-size: 1rem;
 `;

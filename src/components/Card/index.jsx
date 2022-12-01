@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {
-  Button,
   Column,
   LoginOrRegister,
   Logo,
@@ -11,7 +10,7 @@ import {
 } from "./styles";
 
 import Icon from "../../assets/alipay-circle.svg";
-import { useAuth } from "../../context/authenticateRoute";
+import { useAuth } from "../../context/authenticate";
 export default function Card({ children }) {
   const { verifyNextRouteOnSetRouter} = useAuth();
 
@@ -28,7 +27,6 @@ export default function Card({ children }) {
           </button>
         </LoginOrRegister>
         {children}
-        <Button>Entrar</Button>
         <FastRegister>
           <p>Cadastro rápido:</p>
           <Link to="/Register" style={LinkStyle}>
